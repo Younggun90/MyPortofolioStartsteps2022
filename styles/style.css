@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'El Messiri', sans-serif;
+    background-color: transparent;
+    color: #AA8B56;
+}
+
+.body{
+    height: 100vh;
+    display: grid;
+    grid-template-columns:repeat(12, 1fr);
+    grid-template-rows:repeat(12, 1fr)
+}
+
+.Navbar{
+    background-color: #AA8B56;
+    grid-column: 1 / span 12;
+    grid-row: 1 / span 1;
+}
+
+.Footer{
+    background-color: #AA8B56;
+    grid-column: 1 / span 12;
+    grid-row: 12 / span 1;
+}
+
+.LeftSideMenu{
+    background-color: #AA8B56;
+    grid-column: 1 / span 2;
+    grid-row: 2 / span 10;
+}
+
+.RightSideMenu{
+    background-color: #AA8B56;
+    grid-column: 11 / span 2;
+    grid-row: 2 / span 10;
+}
+
+/* main page body style */
+.PageContent{
+    background-color: #F0EBCE;
+    grid-column: 3 / span 8;
+    grid-row: 2 / span 10;
+}
+
+.Navbar {
+    display: flex;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pagesList ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding-right: 10px;
+}
+
+.pageTitle {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.Brand{
+    padding-left: 10px;
+}
+
+/* main page body style */
+.PageContent{
+    background: radial-gradient(circle at top, #EBC7E8, #BFACE0, #645CAA);
+    radial-gradient(circle at left, #E6B31E, #FCFAF1, #CACACA);
+
+
+    background-size: 400% 400%;
+    animation: AnimatedBG 12s ease-in-out infinite;
+}
+
+@-webkit-keyframes AnimatedBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
